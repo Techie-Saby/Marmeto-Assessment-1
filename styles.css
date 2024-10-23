@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(106deg, #F4A764 -2.93%, #FFDEC2 72.14%);
+    color: white;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.logo {
+    display: flex;
+    width: 123px;
+    height: 51px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-left: 300px;
+}
+nav ul li {
+    margin-right: 30px;
+    color: #1C1415;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+nav ul li a {
+    color: #1C1415;
+    text-decoration: none;
+}
+.sign-up {
+    display: inline-flex;
+    padding: 10px 38px;
+    justify-content: center;
+    border-style: solid;
+    border-width: 0;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    background: #1C1415;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.text-content {
+    max-width: 50%;
+    padding-bottom: 50px;
+}
+h1 {
+    font-size: 48px;
+    font-family: "Sofia Sans";
+    line-height: 50%;
+    font-weight: 900;
+}
+h2 {
+    font-size: 36px;
+    font-family: "Sofia Sans";
+    margin-bottom: 30px;
+    line-height: 50%;
+    font-weight: 900;
+}
+.color{
+    color: black;
+}
+p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 454.074px;
+    font-family: poppins;
+    color: rgba(28, 20, 21, 0.80);
+    font-weight: 600;
+}
+.price {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: poppins;
+}
+.watch-carousel {
+    max-width: 40%;
+}
+.splide__slide img {
+    margin-left: 70px;
+    width: 70%;
+    height: auto;
+}
