@@ -70,35 +70,6 @@ document.addEventListener('DOMContentLoaded', function() {
         
         document.body.style.transition = 'background 0.5s ease';
         document.body.style.background = data.gradient;
-        
-        document.querySelectorAll('nav ul li a, .social-icons a').forEach(el => {
-            el.style.transition = 'color 0.5s ease, border-color 0.5s ease';
-            el.style.color = textColor;
-            if (el.classList.contains('social-icons')) {
-                el.style.borderColor = textColor;
-            }
-        });
-    }
-
-    function getBrightness(gradient) {
-        const canvas = document.createElement('canvas');
-        const ctx = canvas.getContext('2d');
-        const grd = ctx.createLinearGradient(0, 0, 200, 0);
-        const colors = gradient.match(/#[a-f\d]{6}|#[a-f\d]{3}|rgb$$\s*\d+\s*,\s*\d+\s*,\s*\d+\s*$$/gi);
-        colors.forEach((color, index) => {
-            grd.addColorStop(index / (colors.length - 1), color);
-        });
-        ctx.fillStyle = grd;
-        ctx.fillRect(0, 0, 200, 1);
-        const imageData = ctx.getImageData(0, 0, 200, 1).data;
-        let totalBrightness = 0;
-        for (let i = 0; i < imageData.length; i += 4) {
-            const r = imageData[i];
-            const g = imageData[i + 1];
-            const b = imageData[i + 2];
-            totalBrightness += (r * 299 + g * 587 + b * 114) / 1000;
-        }
-        return totalBrightness / (imageData.length / 4);
     }
 
     document.querySelector('.sign-up').addEventListener('click', function() {
